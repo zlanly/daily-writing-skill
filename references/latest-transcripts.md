@@ -1,12 +1,12 @@
 # 最新视频转写内容
 
-## 2026-08-09
+## 2026-08-10
 
-### 状态：无法获取（连续第 6 天）
+### 状态：无法获取（连续第 7 天）
 - **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
 - **当日尝试**: iesdouyin.com/web/api/v2/aweme/post → 返回 0 字节（需签名）
 - **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v5）
+- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v6）
 - **待获取**: 剩余约 92 期视频
 
 ### 建议解决方案
@@ -14,6 +14,15 @@
 2. 使用 Playwright 浏览器自动化绕过反爬
 3. 付费使用第三方抖音数据 API
 4. 手动提供视频分享链接（可从抖音 App 复制链接后提供）
+
+---
+
+## 2026-08-09
+
+### 状态：无法获取（连续第 6 天）
+- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
+- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
+- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v5）
 
 ---
 
