@@ -1,65 +1,39 @@
 # 最新视频转写内容
 
-## 2026-08-10
+## 2026-08-11 ⭐ 工具打通后首次真实获取
 
-### 状态：无法获取（连续第 7 天）
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **当日尝试**: iesdouyin.com/web/api/v2/aweme/post → 返回 0 字节（需签名）
+> 2026-08-10 打通抖音抓取工具（a_bogus 纯 Python 签名 + curl_cffi Chrome TLS 指纹 + ttwid cookie），
+> 每日蒸馏从降级路径升级为真实视频驱动。当前可稳定获取最新 ~18 条视频元数据（desc/日期/点赞/评论）。
+
+### 视频 1（最新）
+- **标题**: 不要再写分行散文了，三招教你写出好诗歌
+- **aweme_id**: 7670033226728218802
+- **日期**: 2026-08-04 | **时长**: 6分36秒 | **点赞**: 126 | **评论**: 8
+- **主题**: 诗歌创作——把「分行散文」升级为「真诗」的三个开关
+- **蒸馏产出**: E2. 诗歌三开关精讲（通感/陌生化/细节聚焦 + 三开关联动检验表）
+
+### 视频 2
+- **标题**: 写作一直在原地踏步，问题不在才华在语感
+- **aweme_id**: 7669810773497560942
+- **日期**: 2026-08-03 | **时长**: 1分59秒 | **点赞**: 65 | **评论**: 7
+- **主题**: 写作瓶颈诊断——语感是流量，才华是存量
+- **蒸馏产出**: 语感 plateau 诊断工具（5 症状表 + 自我诊断三问 + 语感训练法）
+
+---
+
+## 2026-08-10 及之前（工具打通前）
+
+### 状态：无法获取（2026-08-04 ~ 08-10 连续 7 天）
+- **原因**: 抖音 API 需要 X-Bogus 签名认证，旧方案沙箱环境不支持浏览器 JS 执行
+- **旧尝试**: iesdouyin / douyin.com / aweme-eu.snssdk.com / douyin.wtf / tikwm.com 全部被反爬拦截
 - **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
 - **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v6）
-- **待获取**: 剩余约 92 期视频
+- **待获取**: 剩余约 92 期视频（历史翻页需登录态）
 
-### 建议解决方案
-1. 部署 Node.js 环境的抖音签名服务（如 douyin-tiktok-scraper / X-Bogus 生成器）
-2. 使用 Playwright 浏览器自动化绕过反爬
-3. 付费使用第三方抖音数据 API
-4. 手动提供视频分享链接（可从抖音 App 复制链接后提供）
-
----
-
-## 2026-08-09
-
-### 状态：无法获取（连续第 6 天）
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v5）
-
----
-
-## 2026-08-08
-
-### 状态：无法获取（连续第 5 天）
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v4）
-
----
-
-## 2026-08-07
-
-### 状态：无法获取（连续第 4 天）
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，已合并入 daily-writing-skill v1-v3）
-
----
-
-## 2026-08-05
-
-### 状态：无法获取（连续第 2 天）
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **尝试的方法**: iesdouyin / douyin.com / aweme-eu.snssdk.com / douyin.wtf / tikwm.com 全部被反爬拦截
-- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库，全量合并入 daily-writing-skill v2）
-
----
-
-## 2026-08-04
-
-### 状态：无法获取
-- **原因**: 抖音 API 需要 X-Bogus 签名认证，当前运行环境不支持浏览器 JS 执行
-- **账号**: 柳碧青讲文学（sec_uid: MS4wLjABAAAAYZmuPkbTTK4zfHScooI-WCr7FQ7O2L5O7Asyl8GcU7Y）
-- **已有覆盖**: 40/132 期视频（来源：writing-coach 私有仓库）
+### 当前能力边界
+- ✅ 可获取: 最新 ~18 条视频元数据（desc/日期/点赞/评论）
+- ❌ 不可获取: 完整口播转写（只有 desc 标题）、历史 92 期视频（需登录 cookie）
+- 🔜 探索方向: xbrowser 真实浏览器渲染 / 登录 cookie 获取 / Playwright 自动化
 
 ---
 
